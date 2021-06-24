@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/341f5cf1c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/css/swiper-bundle.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">NooKyn</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list nav__grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">O mnie</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skillsy</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Kontakt</a>
+                    </li>
+                </ul>
+                <i class="fas fa-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+                <!-- theme change button  -->
+                <i class="far fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fab fa-untappd"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home home__bg section" id="home">
+            <div class="home__container container grid">
+
+                <div class="home__content grid">
+
+                    <div class="home__img">
+                        <svg class="blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 .1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x='15' y='0'
+                                    xlink:href="./dist/img/untitled-2-removebg-preview.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home__social">
+                        <a href="#" target="_blank" class="home__social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="home__social-icon"><i class="fab fa-dribbble-square"></i></a>
+                        <a href="#" target="_blank" class="home__social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Cześć mam na imię Radek</h1>
+                        <h3 class="home__subtitle">Jestem Frontend Developerem</h3>
+                        <p class="home__description">Z pasją tworzę strony WWW.</p>
+                        <a href="#contact" class="button button--flex home-btn">Napisz do mnie
+                            <i class="fas fa-envelope-open-text button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="fas fa-mouse home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Przewiń</span>
+                        <i class="fas fa-arrow-down home__scrol-arrow"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+
+            <h2 class="section__title">O mnie</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+                <img src="/dist/img/hacker-5027679_640.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">Od 2 lat uczę się tworzyć strony internetowe i jest to moja pasja.
+                        Chciałbym zdobyć swoje pierwsze doświadcznienie komercyjne. Dlatego szukam pracy gdzie bedę mógł
+                        pracować i uczyć się wśród ludzi, którzy z pasją pomagają tworzyć projekty najwyższej jakości.
+                    </p>
+
+                    <div class="about__buttons">
+                        <a href="/assets/pdf/Alexa-Cv.pdf" target="_blank" class="button button--flex">Download cv <i
+                                class="fas fa-download button__icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skille</h2>
+            <div class="skills__container container grid">
+                <div>
+                    <!-- skill 1 -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+
+                            <div>
+                                <h1 class="skill__titles">Frontend developer</h1>
+                                <span class="skills__subtitle">Prawie dwa lata doświadczenia</span>
+                            </div>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScriptL</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">15%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="portfolio portfolio__bg section" id="portfolio">
+
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Moje prace</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./dist/img/wszedzie.jpg" alt="portfolio" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Wszędzie-dobrze</h3>
+                            <p class="portfolio__description">Strona portfolio</p>
+                            <a href="www.wszedzie-dobrze.pl" target="_blank"
+                                class="button button--flex button--small portfolio__button">Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./dist/img/logo D pomarancz małe.png" alt="portfolio" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Deliora.pl</h3>
+                            <p class="portfolio__description">Sklep WooCommerce</p>
+                            <a href="www.deliora.pl" target="_blank"
+                                class="button button--flex button--small portfolio__button">Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./dist/img/grawilogo.jpg" alt="portfolio" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Fizjograwitacja.pl</h3>
+                            <p class="portfolio__description">Strona firmowa</p>
+                            <a href="www.fizjograwitacja.pl" target="_blank"
+                                class="button button--flex button--small portfolio__button">Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fas fa-chevron-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-chevron-left swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Kontakt</h2>
+            <span class="section__subtitle">Napisz do mnie</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="fas fa-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Zadzwoń</h3>
+                            <span class="contact__subtitle">783-812-846</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="far fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">radek.dumin@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Miasto</h3>
+                            <span class="contact__subtitle">Kielce</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact" id="contact">
+                    <form id="contactForm" method="post" action="mail.php" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Imię (min. 3 znaki)*</label>
+                                <input type="text" name="name" required pattern=.{3,} id="name"
+                                    data-error-text="Wypełnij to pole" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email*</label>
+                                <input type="email" name="email" required id="email"
+                                    data-error-text="Wpisz poprawny email" class="contact__input">
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="message" class="contact__label">Wiadomość*</label>
+                            <textarea name="message" required data-error-text="Musisz wypełnić pole" id="message"
+                                class="contact__input"></textarea>
+                        </div>
+                        <div class="form-row">
+                           
+                            <button type="submit" class="submit-btn button button--flex button-contact ">
+                                Wyślij
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">NooKyn</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">O mnie</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+            </div>
+            <p class="footer__copy">&#169; NooKyn All Rights reserved</p>
+        </div>
+    </footer>
+
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="far fa-arrow-alt-circle-up scrollup__icon"></i>
+    </a>
+
+    <!-- <section class="footer">
+        <div class="footer container">
+            <p class="footer-bottom-text"> &copy; <span class="footer-year"> </span> NooKie
+        </div>
+        </div>
+    </section>
+ -->
+
+    <script src="./dist/js/swiper-bundle.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
